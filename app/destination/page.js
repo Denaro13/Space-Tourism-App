@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+// import data from "../api/data";
 import data from "../api/data";
 import { useState } from "react";
 

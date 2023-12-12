@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const NavLinks = () => {
   const pages = [
     { id: 0, url: "/", text: "home" },
