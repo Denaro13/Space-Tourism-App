@@ -6,8 +6,8 @@ import Image from "next/image";
 const Technology = () => {
   const { technology } = data;
   const [currentItemIndex, setCurrentItemIndex] = useState(0);
-
-  const [width, setWidth] = useState(window.innerWidth);
+  const size = window.innerWidth;
+  const [width, setWidth] = useState(size);
   const breakpoint = 1024;
 
   useEffect(() => {
