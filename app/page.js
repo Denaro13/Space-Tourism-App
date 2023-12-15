@@ -9,7 +9,6 @@ export default function Home() {
             so, you want to travel to
           </p>
           <h1 className="text-9xl uppercase mb-5 lg:tracking-widest">space</h1>
-
           <p className="tracking-wide leading-7 text-xm lg:w-9/12 lg:tracking-widest">
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
