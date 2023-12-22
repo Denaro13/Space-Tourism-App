@@ -6,15 +6,17 @@ import Image from "next/image";
 const Technology = () => {
   const { technology } = data;
   const [currentItemIndex, setCurrentItemIndex] = useState(0);
-  const size = window.innerWidth;
-  const [width, setWidth] = useState(size);
+  const [width, setWidth] = useState(0);
   const breakpoint = 1024;
 
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleWindowResize);
+    if (typeof window !== "undefined") {
+      setWidth(window.innerWidth);
+      window.addEventListener("resize", handleWindowResize);
 
-    return () => window.removeEventListener("resize", handleWindowResize);
+      return () => window.removeEventListener("resize", handleWindowResize);
+    }
   }, []);
 
   const handleClick = (index) => {
