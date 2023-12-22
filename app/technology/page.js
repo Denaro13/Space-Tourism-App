@@ -10,8 +10,8 @@ const Technology = () => {
   const breakpoint = 1024;
 
   useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth);
     if (typeof window !== "undefined") {
+      const handleWindowResize = () => setWidth(window.innerWidth);
       setWidth(window.innerWidth);
       window.addEventListener("resize", handleWindowResize);
 
